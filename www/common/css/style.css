@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+/**************************************************
+
+                    全デバイス共通
+
+**************************************************/
+* {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+/* 画像 */
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* 見出し */
+h1 {
+    font-size: 32px;
+    line-height: 1.5; /* 48px */
+    margin: 0;
+}
+h2 {
+    font-size: 24px;
+    line-height: 1; /* 24px */
+    margin-bottom: 24px;
+}
+h3,h4,h5,h6 {
+    font-size: 16px;
+    line-height: 1.5; /* 24px */
+}
+.heading_type_A {
+    padding-bottom: 6px;
+    border-bottom: solid 4px #F5A9A9;
+    position: relative;
+    z-index: -1;
+}
+.heading_type_A:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 4px #FA5858;
+    bottom: -4px;
+    width: 20%;
+}
+.heading_type_B {
+    padding: 0.25em;
+    border-top: solid 2px #F5A9A9;
+    border-bottom: solid 2px #F5A9A9;
+    background: -webkit-repeating-linear-gradient(-45deg, #fff0f5, #fff0f5 3px,#ffe9f3 3px, #ffe9f3 7px);
+    background: repeating-linear-gradient(-45deg, #fff0f5, #fff0f5 3px,#ffe9f3 3px, #ffe9f3 7px);
+}
+
+/* フォントサイズ */
+p {
+    font-size: 16px;
+}
+
+/* ボタン */
+.button {
+    display: inline-block;
+    border: solid 2px #FFF;
+    padding: 8px 20px;
+    border-radius: 10px;
+    color: #FAFAFA;
+    margin: 24px 0;
+}
+.button:hover {
+    background: #FFF;
+    color: #000;
+}
+
+/* リンク */
+a {
+    text-decoration: none;
+}
+
+/* グリッド */
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.col {
+    width: 100%;
+}
+
+/* トップへ戻るボタン */
+.top_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    background-color: rgba(252,157,157,0.8);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 30px;
+    padding-top: 26px;
+    letter-spacing: 1px;
+}
+.top_btn:before {
+    content: '\25B2';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.top_btn:hover {
+    opacity: 0.7;
+}
+
+/* テーブル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+table tr th,
+table tr td {
+    border: 1px solid #CBE8F3;
+    padding: 8px 10px;
+}
+table tr th {
+    width: 20%;
+    background: #E0F2F7;
+}
+
+
+
+/* --- .wrapper --- */
+.wrapper {
+    position: relative;
+}
+
+
+
+/* --- header --- */
+.header {
+    padding: 32px;
+    background: #CBE8F3;
+}
+.header h3 {
+    margin-bottom: 100px;
+}
+.header_logo img {
+    width: 202px;
+}
+.header_nav ul li a {
+    color: #2F322A;
+    padding: 0 8px;
+}
+
+
+
+/* --- main --- */
+.main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* --- footer --- */
+.footer {
+    padding: 24px;
+    margin-top: 24px;
+    background: #5B5B5B;
+    text-align: center;
+}
+.footer_text {
+    font-size: 12px;
+    line-height: 2;
+    color: #FFF;
+}
+
+
+
+/* ================================================
+                    トップ
+=================================================== */
+/* .main_visual */
+.main_visual {
+    background-image: url(../../images/main_image.jpg);
+    background-size: cover;
+    padding: 120px 24px 120px 24px;
+    color: #FAFAFA;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* .portfolio */
+.portfolio .col {
+    text-align: center;
+}
+.portfolio img {
+    width: 960px;
+}
+.portfolio .button {
+    border-color: #FC9D9D;
+    color: #FC9D9D;
+}
+.portfolio .button:hover {
+    background: #FC9D9D;
+    color: #FFF;
+}
+
+
+
+/* ================================================
+                    About
+=================================================== */
+/* .about_visual */
+.about_visual {
+    text-align: center;
+}
+.about_visual .about_img {
+    width: 296px;
+    margin-bottom: 24px;
+}
+
+/* .bar_chart_box */
+.bar_chart_box {
+    width: 100%;
+	margin-bottom: 24px;
+}
+.bar_chart_box p {
+    padding: 5px;
+    margin: 0;
+}
+.bar_chart {
+    display: block;
+    text-align: center;
+    color: #f0ffff;
+    height: 2em;
+    line-height: 2em;
+}
+.bar1 {
+    width: 90%;
+    background: #E44D26;
+}
+.bar2 {
+    width: 90%;
+    background: #007DC6;
+}
+.bar3 {
+    width: 40%;
+    background: #00C8FF;
+}
+.bar4 {
+    width: 40%;
+    background: #D6BA33;
+}
+.bar5 {
+    width: 80%;
+    background: #1069AE;
+}
+.bar6 {
+    width: 80%;
+    background: #6EBD4A;
+}
+
+
+
+/* ================================================
+                    Portfolio
+=================================================== */
+/* 画像 */
+.portfolio_visual {
+    text-align: center;
+}
+.portfolio_img {
+    width: 720px;
+    margin-bottom: 24px;
+}
+
+/* ボタン */
+.portfolio_btn {
+    text-align: center;
+}
+.portfolio_btn .button {
+    margin: 0 0 48px;
+    border-color: #FC9D9D;
+    color: #FC9D9D;
+}
+.portfolio_btn .button:hover {
+    background: #FC9D9D;
+    color: #FFF;
+}
+
+
+
+
+/**************************************************
+
+                    スマートフォン用
+
+**************************************************/
+@media screen and (max-width: 599px) {
+    /* テーブル */
+    table {
+        border-top: 1px solid #CBE8F3;
+    }
+    table tr th,
+    table tr td {
+        display: block;
+    }
+    table tr th {
+        width: 100%;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    
+    
+    /* --- header --- */
+    .header {
+        padding: 8px 0 24px 0;
+    }
+    
+    
+    
+    /* --- ドロワーメニュー --- */
+    /* ボタン装飾 */
+    #navToggle {
+        position: absolute; /*to body*/
+        right: 20px;
+        top: 25px;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+    #navToggle div {
+        position: relative;
+    }
+    #navToggle span {
+        display: block;
+        position: absolute; /*to div*/
+        width: 100%;
+        border-bottom: solid 3px #000;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+    }
+    #navToggle span:nth-child(1) {
+        top: 0;
+    }
+    #navToggle span:nth-child(2) {
+        top: 11px
+    }
+    #navToggle span:nth-child(3) {
+        top: 22px
+    }
+
+    /* ドロワーリスト */
+    header nav {
+        position: absolute;
+        right: 0;
+        top: -300px; /* 通常時はビュー外 */
+        background: #CBE8F3;
+        width: 100%;
+        padding: 0px;
+        -webkit-transition:.5s ease-in-out;
+        -moz-transition:.5s ease-in-out;
+        -o-transition:.5s ease-in-out;
+        transition:.5s ease-in-out;
+        text-align: center;
+    }
+    header ul {
+        margin: 0;
+        padding: 0;
+    }
+    header ul li {
+        display: block;
+        margin: 0;
+        padding: 12px;
+    }
+    header ul li a {
+        display: block;
+    }
+    header ul li:after {
+        content: '';
+    }
+    header ul li:last-child { 
+        border-bottom: none;
+    }
+
+    /* Toggle(Button) */
+    #navToggle {
+        display: block;
+    }
+
+    /* Click Toggle(Button) */
+    .openNav #navToggle span:nth-child(1) {
+        top: 11px;
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        transform:rotate(-45deg);
+    }
+    .openNav #navToggle span:nth-child(2),
+    .openNav #navToggle span:nth-child(3) {
+        top: 11px;
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        transform:rotate(45deg);
+    }
+
+    /*header menu*/
+    .openNav nav {
+        -moz-transform: translateY(390px);
+        -webkit-transform: translateY(390px);
+        transform: translateY(390px);
+    }
+    
+    
+    
+    /* --- .main_visual --- */
+    .main_visual h3 {
+        font-size: 16px;
+    }
+    
+    
+    
+    /* --- .portfolio_btn --- */
+    .portfolio_btn {
+        text-align: left;
+    }
+}
+
+
+
+
+
+/**************************************************
+
+                    タブレット用
+
+**************************************************/  
+@media screen and (min-width: 600px) {
+    /* --- header --- */
+    .header {
+        text-align: center;
+    }
+    .header_nav ul li {
+        display: inline-block;
+    }
+    
+    
+    
+    /* --- main --- */
+    .main {
+        max-width: 778px;
+    }
+}
+
+
+
+
+
+/**************************************************
+
+                    デスクトップ用
+
+**************************************************/
+@media screen and (min-width: 960px) { 
+    /* --- header --- */
+    .header:after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+    .header_logo {
+        float: left;
+    }
+    .header_nav ul {
+        float: right;
+    }
+    
+    .header_nav ul li {
+        position: relative;
+        display: inline-block;
+    }
+    .header_nav ul li:before,
+    .header_nav ul li:after {
+        position: absolute;
+        display: inline-block;
+        top: 1.3em;
+        content: " ";
+        width: 0;
+        height: 2px;
+        background: #2F322A;
+        transition: 0.8s;
+    }
+    .header_nav ul li:before {
+        left: 50%;
+    }
+    .header_nav ul li:after {
+        right: 50%;
+    }
+    .header_nav ul li:hover:before,
+    .header_nav ul li:hover:after {
+        width: 50%;
+    }
+    
+    
+    
+    /* --- main --- */
+    .main {
+        max-width: 960px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    /* .main_visual */
+    .main_visual h3 {
+        margin-bottom: 48px;
+    }
+
+    /* カラム数 */
+    .col-lg-hf {
+        float: left;
+        width: 50%;
+        padding: 24px 8px;
+    }
+    .col-lg-td {
+        float: left;
+        width: 33.3333333%;
+        padding: 24px 8px;
+    }
+}
