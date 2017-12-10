@@ -331,6 +331,8 @@ table tr th {
     
     /* --- header --- */
     .header {
+        position: fixed;
+        width: 100%;
         padding: 8px 0 24px 0;
     }
     
