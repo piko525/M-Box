@@ -337,6 +337,10 @@ table tr th {
         width: 100%;
         padding: 8px 0 8px 0;
     }
+    .header_logo {
+        position: relative;
+        z-index: 3;
+    }
     
     
     /* --- ドロワーメニュー --- */
@@ -348,6 +352,7 @@ table tr th {
         width: 30px;
         height: 25px;
         cursor: pointer;
+        z-index: 3;
     }
     #navToggle div {
         position: relative;
