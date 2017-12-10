@@ -339,7 +339,6 @@ table tr th {
     }
     
     
-    
     /* --- ドロワーメニュー --- */
     /* ボタン装飾 */
     #navToggle {
@@ -439,7 +438,10 @@ table tr th {
         font-size: 16px;
     }
     
-    
+    /* --- .main --- */
+    .main {
+        padding-top: 100px;
+    }
     
     /* --- .portfolio_btn --- */
     .portfolio_btn {
@@ -471,6 +473,7 @@ table tr th {
     /* --- main --- */
     .main {
         max-width: 778px;
+        padding-top: 100px;
     }
 }
 
@@ -531,7 +534,7 @@ table tr th {
     /* --- main --- */
     .main {
         max-width: 960px;
-        margin-top: 48px;
+        /* margin-top: 48px; */
         margin-bottom: 48px;
     }
 
