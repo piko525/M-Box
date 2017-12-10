@@ -37,6 +37,7 @@ h3,h4,h5,h6 {
 }
 .heading_type_A {
     padding-bottom: 6px;
+    margin-top: 0;
     border-bottom: solid 4px #F5A9A9;
     position: relative;
     z-index: -1;
@@ -152,6 +153,8 @@ table tr th {
 
 /* --- header --- */
 .header {
+    width: 100%;
+    position: fixed;
     padding: 32px;
     background: #CBE8F3;
 }
@@ -331,9 +334,8 @@ table tr th {
     
     /* --- header --- */
     .header {
-        position: fixed;
         width: 100%;
-        padding: 8px 0 24px 0;
+        padding: 8px 0 8px 0;
     }
     
     
@@ -374,7 +376,7 @@ table tr th {
     header nav {
         position: absolute;
         right: 0;
-        top: -300px; /* 通常時はビュー外 */
+        top: -310px; /* 通常時はビュー外 */
         background: #CBE8F3;
         width: 100%;
         padding: 0px;
@@ -458,6 +460,7 @@ table tr th {
     /* --- header --- */
     .header {
         text-align: center;
+        padding: 8px 0 8px 0;
     }
     .header_nav ul li {
         display: inline-block;
@@ -482,6 +485,9 @@ table tr th {
 **************************************************/
 @media screen and (min-width: 960px) { 
     /* --- header --- */
+    .header {
+        padding: 8px 20px; 8px 0;
+    }
     .header:after {
         content: " ";
         display: block;
