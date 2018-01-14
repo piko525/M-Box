@@ -552,13 +552,16 @@ table tr th {
     
     
     /* --- .main_visual --- */
+    .main_visual {
+        height: 360px;
+    }
     .main_visual h3 {
         font-size: 16px;
     }
     
     /* --- .main --- */
     .main {
-        padding-top: 100px;
+        padding-top: 24px;
     }
     
     /* --- .portfolio_btn --- */
@@ -601,7 +604,7 @@ table tr th {
     /* --- main --- */
     .main {
         max-width: 778px;
-        padding-top: 100px;
+        padding-top: 30px;
     }
 }
 
