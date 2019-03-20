@@ -140,134 +140,27 @@ table {
 table tr th,
 table tr td {
     border: 1px solid #CBE8F3;
-    padding: 8px 10px;
+    padding: 8px 12px;
 }
 table tr th {
     width: 20%;
     background: #E0F2F7;
 }
-
-
-
-/* ローディング画面の背景 */
-.loading {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background: #CCE6F2;
-  z-index: 9999;
+/* table_type1 */
+.table_type1 .career {
+    margin-bottom: 12px;
 }
-/* アニメーション */
-/* ↓↓↓ローディングのスタイル↓↓↓ */
-
-.loader
-{
-	position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-	width: 50px; /*ローディングアイコンの横サイズ*/
-	height: 50px; /*ローディングアイコンの縦サイズ*/
-	border-radius: 30px;  /*CSS3で円を書く*/
-	border: 6px solid #000;  /*円に枠をつける*/
-	border-right-color: transparent; /*円の右にC状の空きをつける*/
-	
-	-webkit-animation: spin 1s infinite linear; /*回転のアニメーションをつける*/
-	-moz-animation: spin 1s infinite linear;
+.table_type1 td .career:last-of-type {
+    margin-bottom: 0;
 }
- /*キーフレームのアニメーションをつける*/
-@-webkit-keyframes spin
-{
-	0% { -webkit-transform: rotate(0deg); opacity: 0.4; }
-	50%  { -webkit-transform: rotate(180deg); opacity: 1; }
-	100%   { -webkit-transform: rotate(360deg); opacity: 0.4; }
+.table_type1 .paragraph {
+    margin: 0;
 }
-
-@-moz-keyframes spin
-{
-	0% { -moz-transform: rotate(0deg); opacity: 0.4; }
-	50%  { -moz-transform: rotate(180deg); opacity: 1; }
-	100%   { -moz-transform: rotate(360deg); opacity: 0.4; }
-}
-
-/* ↑↑↑ローディングのスタイル↑↑↑ */
-
-/*
-.animation,
-.animation:before,
-.animation:after {
-  background: #ffffff;
-  -webkit-animation: load1 1s infinite ease-in-out;
-  animation: load1 1s infinite ease-in-out;
-  width: 1em;
-  height: 4em;
-}
-.animation {
-  color: #ffffff;
-  text-indent: -9999em;
-  margin: 88px auto;
-  position: relative;
-  font-size: 11px;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
-    top: 35%;
-    left: 0;
-}
-.animation:before,
-.animation:after {
-  position: absolute;
-  top: 0;
-  content: '';
-}
-.animation:before {
-  left: -1.5em;
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
-.animation:after {
-  left: 1.5em;
-}
-@-webkit-keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
-@keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
-*/
-
-
 
 /* --- .wrapper --- */
 .wrapper {
     position: relative;
 }
-
-
 
 /* --- header --- */
 .header {
@@ -288,8 +181,6 @@ table tr th {
     padding: 0 8px;
 }
 
-
-
 /* --- main --- */
 .main {
     width: 90%;
@@ -297,11 +188,6 @@ table tr th {
     margin-left: auto;
     margin-right: auto;
 }
-/* .subpage .main {
-    padding-top: 96px;
-} */
-
-
 
 /* --- footer --- */
 .footer {
@@ -427,7 +313,6 @@ table tr th {
 
 
 
-
 /**************************************************
 
                     スマートフォン用
@@ -448,8 +333,6 @@ table tr th {
         border-bottom: none;
     }
     
-    
-    
     /* --- header --- */
     .header {
         width: 100%;
@@ -459,7 +342,6 @@ table tr th {
         position: relative;
         z-index: 3;
     }
-    
     
     /* --- ドロワーメニュー --- */
     /* ボタン装飾 */
@@ -554,8 +436,6 @@ table tr th {
         transform: translateY(390px);
     }
     
-    
-    
     /* --- .main_visual --- */
     .main_visual {
         height: 360px;
@@ -569,8 +449,6 @@ table tr th {
         text-align: left;
     }
 }
-
-
 
 
 
@@ -599,15 +477,11 @@ table tr th {
         display: inline-block;
     }    
     
-    
-    
     /* --- main --- */
     .main {
         max-width: 778px;
     }
 }
-
-
 
 
 
@@ -658,8 +532,6 @@ table tr th {
     .header_nav ul li:hover:after {
         width: 50%;
     }
-    
-    
     
     /* --- main --- */
     .main {
