@@ -66,15 +66,11 @@ p {
 /* ボタン */
 .button {
     display: inline-block;
-    border: solid 2px #FFF;
+    border: solid 2px #333;
     padding: 8px 20px;
     border-radius: 10px;
-    color: #FAFAFA;
+    color: #333;
     margin: 24px 0;
-}
-.button:hover {
-    background: #FFF;
-    color: #000;
 }
 
 /* リンク */
@@ -208,12 +204,12 @@ table tr th {
 =================================================== */
 /* .main_visual */
 .main_visual {
-    height: 300px;
+    width: 100vw;
+    height: 100vh;
     position: relative;
     top: 80px;
     background-image: url(../../images/main_image.jpg);
     background-size: cover;
-    color: #FAFAFA;
     text-align: center;
     margin-bottom: 24px;
     z-index: 2;
@@ -223,6 +219,13 @@ table tr th {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.main_visual .text h1 {
+    color: #333;
+    font-size: 48px;
+}
+.main_visual .text p {
+    font-weight: bold;
 }
 
 /* .portfolio */
