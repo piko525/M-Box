@@ -230,14 +230,29 @@ table tr th {
 
 /* .portfolio */
 .portfolio .col {
+    opacity: 0;
     text-align: center;
 }
-.portfolio img {
-    width: 960px;
+.portfolio .col:nth-of-type(1) {
+    transform: translate(0, 50px);
+    transition: all 0.5s;
+}
+.portfolio .col:nth-of-type(2) {
+    transform: translate(0, 50px);
+    transition: all 1.5s;
+}
+.portfolio .col:nth-of-type(3) {
+    transform: translate(0, 50px);
+    transition: all 2.5s;
+}
+.portfolio .col.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 .portfolio .button {
     border-color: #FC9D9D;
     color: #FC9D9D;
+    transition: 0.8s;
 }
 .portfolio .button:hover {
     background: #FC9D9D;
