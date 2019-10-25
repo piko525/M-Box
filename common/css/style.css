@@ -453,9 +453,6 @@ table tr th {
     }
     
     /* --- .main_visual --- */
-    .main_visual {
-        height: 360px;
-    }
     .main_visual h3 {
         font-size: 16px;
     }
