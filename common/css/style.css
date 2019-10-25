@@ -396,7 +396,7 @@ table tr th {
     header nav {
         position: absolute;
         top: 80px;
-        right: -370px;
+        right: -375px;
         background-color: #CBE8F3;
         width: 100%;
         padding: 0px;
@@ -447,9 +447,9 @@ table tr th {
 
     /*header menu*/
     .openNav nav {
-        -moz-transform: translateX(-370px);
-        -webkit-transform: translateX(-370px);
-        transform: translateX(-370px);
+        -moz-transform: translateX(-375px);
+        -webkit-transform: translateX(-375px);
+        transform: translateX(-375px);
     }
     
     /* --- .main_visual --- */
