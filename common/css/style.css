@@ -395,9 +395,9 @@ table tr th {
     /* ドロワーリスト */
     header nav {
         position: absolute;
-        right: 0;
-        top: -315px; /* 通常時はビュー外 */
-        background: #CBE8F3;
+        top: 80px;
+        right: -370px;
+        background-color: #CBE8F3;
         width: 100%;
         padding: 0px;
         -webkit-transition:.5s ease-in-out;
@@ -447,9 +447,9 @@ table tr th {
 
     /*header menu*/
     .openNav nav {
-        -moz-transform: translateY(390px);
-        -webkit-transform: translateY(390px);
-        transform: translateY(390px);
+        -moz-transform: translateX(-370px);
+        -webkit-transform: translateX(-370px);
+        transform: translateX(-370px);
     }
     
     /* --- .main_visual --- */
