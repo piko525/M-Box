@@ -38,8 +38,9 @@ h3,h4,h5,h6 {
 .heading_type_A {
     padding-bottom: 6px;
     margin-top: 0;
-    border-bottom: solid 4px #F5A9A9;
+    margin-bottom: 6px;
     position: relative;
+    border-bottom: solid 4px #F5A9A9;
     z-index: -1;
 }
 .heading_type_A:after {
@@ -64,13 +65,31 @@ p {
 }
 
 /* ボタン */
-.button {
+.btn-01 {
     display: inline-block;
-    border: solid 2px #333;
-    padding: 8px 20px;
-    border-radius: 10px;
     color: #333;
     margin: 24px 0;
+    padding: 8px 20px;
+    border: solid 2px #333;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+.btn-01:hover {
+    background-color: #333;
+    color: #fafafa;
+}
+.btn-02 {
+    display: inline-block;
+    color: #FC9D9D;
+    margin: 24px 0;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: solid 2px #FC9D9D;
+    transition: 0.8s;
+}
+.btn-02:hover {
+    background: #FC9D9D;
+    color: #fafafa;
 }
 
 /* リンク */
@@ -153,7 +172,7 @@ table tr th {
     margin: 0;
 }
 
-/* --- .wrapper --- */
+/* --- wrapper --- */
 .wrapper {
     position: relative;
 }
@@ -202,7 +221,7 @@ table tr th {
 /* ================================================
                     トップ
 =================================================== */
-/* .main_visual */
+/********** メインビジュアル **********/
 .main_visual {
     width: 100vw;
     height: 100vh;
@@ -228,44 +247,14 @@ table tr th {
     font-weight: bold;
 }
 
-/* .portfolio */
+/********** Portfolio **********/
 .portfolio .col {
-    opacity: 0;
     text-align: center;
 }
-.portfolio .col:nth-of-type(1) {
-    transform: translate(0, 50px);
-    -webkit-transition: all 800ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    -moz-transition: all 800ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    -o-transition: all 800ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    transition: all 800ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-}
-.portfolio .col:nth-of-type(2) {
-    transform: translate(0, 50px);
-    -webkit-transition: all 1000ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    -moz-transition: all 1000ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    -o-transition: all 1000ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    transition: all 1000ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-}
-.portfolio .col:nth-of-type(3) {
-    transform: translate(0, 50px);
-    -webkit-transition: all 1200ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    -moz-transition: all 1200ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    -o-transition: all 1200ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-    transition: all 1200ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
-}
-.portfolio .col.scrollin {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-.portfolio .button {
-    border-color: #FC9D9D;
-    color: #FC9D9D;
-    transition: 0.8s;
-}
-.portfolio .button:hover {
-    background: #FC9D9D;
-    color: #FFF;
+
+/********** Works **********/
+.works .col {
+    text-align: center;
 }
 
 
@@ -582,4 +571,36 @@ table tr th {
         width: 33.3333333%;
         padding: 24px 8px;
     }
+}
+
+
+
+/******************** スクロールアニメーション ********************/
+.anime {
+    opacity: 0;
+}
+.anime:nth-of-type(1) {
+    transform: translate(0, 50px);
+    -webkit-transition: all 800ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    -moz-transition: all 800ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    -o-transition: all 800ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    transition: all 800ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+}
+.anime:nth-of-type(2) {
+    transform: translate(0, 50px);
+    -webkit-transition: all 1000ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    -moz-transition: all 1000ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    -o-transition: all 1000ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    transition: all 1000ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+}
+.anime:nth-of-type(3) {
+    transform: translate(0, 50px);
+    -webkit-transition: all 1200ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    -moz-transition: all 1200ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    -o-transition: all 1200ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+    transition: all 1200ms cubic-bezier(0.400, 0.015, 1.000, 1.000);
+}
+.anime.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
 }
