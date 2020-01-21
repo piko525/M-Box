@@ -1,7 +1,8 @@
 // ドロワーメニュー
 $(function () {
-  $('#navToggle').click(function () {//headerに .openNav を付加・削除
-    $('header').toggleClass('openNav');
+  $('#navToggle').on('click', function () {
+    $('.toggle__line').toggleClass('active');
+    $('.header_nav').fadeToggle();
   });
 });
 

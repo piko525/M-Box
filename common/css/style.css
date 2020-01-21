@@ -362,13 +362,14 @@ table tr th {
     /* --- ドロワーメニュー --- */
     /* ボタン装飾 */
     #navToggle {
-        position: absolute; /*to body*/
+        display: block;
+        position: absolute;
         right: 20px;
         top: 25px;
+        z-index: 99;
         width: 30px;
         height: 25px;
         cursor: pointer;
-        z-index: 3;
     }
     #navToggle div {
         position: relative;
@@ -382,30 +383,51 @@ table tr th {
         -moz-transition: .35s ease-in-out;
         transition: .35s ease-in-out;
     }
-    #navToggle span:nth-child(1) {
+    #navToggle .toggle__line--top {
         top: 0;
     }
-    #navToggle span:nth-child(2) {
+    #navToggle .toggle__line--center {
         top: 11px
     }
-    #navToggle span:nth-child(3) {
+    #navToggle .toggle__line--bottom {
         top: 22px
+    }
+    #navToggle .toggle__line--top.active {
+        top: 11px;
+        transform: rotate(45deg);
+    }
+    #navToggle .toggle__line--center.active {
+        transform:scaleX(0);
+    }
+    #navToggle .toggle__line--bottom.active {
+        top: 11px;
+        transform: rotate(135deg);
     }
 
     /* ドロワーリスト */
-    header nav {
-        position: absolute;
-        top: 80px;
-        right: -375px;
-        background-color: #CBE8F3;
-        width: 100%;
-        padding: 0px;
-        -webkit-transition:.5s ease-in-out;
-        -moz-transition:.5s ease-in-out;
-        -o-transition:.5s ease-in-out;
-        transition:.5s ease-in-out;
+    .header_nav {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 98;
+        background-color: rgba(203, 232, 243, 0.95);
         text-align: center;
     }
+    .header_nav_inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .header_nav_item {
+        font-size: 21px;
+        transition: .8s;
+    }
+
     header ul {
         margin: 0;
         padding: 0;
@@ -425,32 +447,6 @@ table tr th {
         border-bottom: none;
     }
 
-    /* Toggle(Button) */
-    #navToggle {
-        display: block;
-    }
-
-    /* Click Toggle(Button) */
-    .openNav #navToggle span:nth-child(1) {
-        top: 11px;
-        -webkit-transform:rotate(-45deg);
-        -moz-transform:rotate(-45deg);
-        transform:rotate(-45deg);
-    }
-    .openNav #navToggle span:nth-child(2),
-    .openNav #navToggle span:nth-child(3) {
-        top: 11px;
-        -webkit-transform:rotate(45deg);
-        -moz-transform:rotate(45deg);
-        transform:rotate(45deg);
-    }
-
-    /*header menu*/
-    .openNav nav {
-        -moz-transform: translateX(-375px);
-        -webkit-transform: translateX(-375px);
-        transform: translateX(-375px);
-    }
     
     /* --- .main_visual --- */
     .main_visual h3 {
@@ -482,6 +478,9 @@ table tr th {
     }
     .header_logo {
         float: left;
+    }
+    .header_nav {
+        display: block;
     }
     .header_nav ul {
         float: right;
