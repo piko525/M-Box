@@ -172,6 +172,15 @@ table tr th {
     margin: 0;
 }
 
+/* パンくず */
+.pankuzu {
+    max-width: 960px;
+    width: 90%;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* --- wrapper --- */
 .wrapper {
     position: relative;
@@ -202,6 +211,9 @@ table tr th {
     padding-top: 96px;
     margin-left: auto;
     margin-right: auto;
+}
+.subpage .main {
+    padding-top: 32px;
 }
 
 /* --- footer --- */
