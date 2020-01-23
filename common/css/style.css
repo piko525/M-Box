@@ -102,6 +102,32 @@ a {
     margin-top: -80px;
 }
 
+/* テーブル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+table tr th,
+table tr td {
+    border: 1px solid #CBE8F3;
+    padding: 8px 12px;
+}
+table tr th {
+    width: 20%;
+    background: #E0F2F7;
+}
+/* table_type1 */
+.table_type1 .career {
+    margin-bottom: 12px;
+}
+.table_type1 td .career:last-of-type {
+    margin-bottom: 0;
+}
+.table_type1 .paragraph {
+    margin: 0;
+}
+
 /* グリッド */
 .row:before, .row:after {
     content: " ";
@@ -146,32 +172,6 @@ a {
     opacity: 0.7;
 }
 
-/* テーブル */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 24px;
-}
-table tr th,
-table tr td {
-    border: 1px solid #CBE8F3;
-    padding: 8px 12px;
-}
-table tr th {
-    width: 20%;
-    background: #E0F2F7;
-}
-/* table_type1 */
-.table_type1 .career {
-    margin-bottom: 12px;
-}
-.table_type1 td .career:last-of-type {
-    margin-bottom: 0;
-}
-.table_type1 .paragraph {
-    margin: 0;
-}
-
 /* パンくず */
 .pankuzu {
     max-width: 960px;
@@ -179,6 +179,23 @@ table tr th {
     padding-top: 80px;
     margin-left: auto;
     margin-right: auto;
+}
+.pankuzu--list {
+    padding-left: 0;
+}
+.pankuzu--item {
+    display: inline-block;
+    list-style-type: none;
+}
+.pankuzu--item::after {
+    content: ">";
+    padding: 0 8px;
+}
+.pankuzu--item:last-child::after {
+    content: "";
+}
+.pankuzu--item a {
+    text-decoration: underline;
 }
 
 /* --- wrapper --- */
