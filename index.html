@@ -3,143 +3,201 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="common/css/normalize.css" media="all">
-  <link rel="stylesheet" type="text/css" href="common/css/style.css" media="all">
-  <title>M-Box</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-Box - Michiのポートフォリオサイト</title>
+
+  <!-- 基本メタタグ -->
+  <meta name="description" content="Michiのポートフォリオサイト。Web制作の実績やスキルを紹介しています。">
+  <meta name="keywords" content="ポートフォリオ,Web制作,Webデザイン,フロントエンド">
+  <meta name="author" content="Michi">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="M-Box - Michiのポートフォリオサイト">
+  <meta property="og:description" content="Michiのポートフォリオサイト。Web制作の実績やスキルを紹介しています。">
+  <meta property="og:url" content="https://piko525.github.io/M-Box/">
+  <meta property="og:site_name" content="M-Box">
+  <meta property="og:image" content="https://piko525.github.io/M-Box/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ja_JP">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="M-Box - Michiのポートフォリオサイト">
+  <meta name="twitter:description" content="Michiのポートフォリオサイト。Web制作の実績やスキルを紹介しています。">
+  <meta name="twitter:image" content="https://piko525.github.io/M-Box/ogp.png">
+  
+  <!-- ファビコン -->
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="M-Box" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- スタイルシート -->
+  <link rel="stylesheet" href="css/kiso.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/top.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- スクリプト -->
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
-  <!-- wrapper -->
-  <div class="wrapper">
-    <!-- header -->
-    <header class="header">
-      <div class="row">
-        <div class="col">
-          <h1 class="header_logo"><a href="index.html"><img src="common/images/logo_main.png" alt="M-Boxロゴ"></a></h1>
-          <!-- #navToggle -->
-          <div id="navToggle">
-            <div>
-              <span class="toggle__line toggle__line--top"></span>
-              <span class="toggle__line toggle__line--center"></span>
-              <span class="toggle__line toggle__line--bottom"></span>
-            </div>
-          </div>
-          <!-- // #navToggle -->
-
-          <!-- .header_nav -->
-          <nav class="header_nav">
-            <div class="header_nav_inner">
-              <div class="header_nav_menu">
-                <ul>
-                  <li class="header_nav_item"><a href="index.html">Home</a></li>
-                  <li class="header_nav_item"><a href="about/about.html">About</a></li>
-                  <li class="header_nav_item"><a href="portfolio/portfolio.html">Portfolio</a></li>
-                  <li class="header_nav_item"><a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSczQHdcVDdxCnmO4njiW7tybl46EhiAnY8lBt3haymUBaL2JQ/viewform?usp=sf_link">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <!-- // .header_nav -->
-        </div>
-      </div>
-    </header>
-    <!-- // header -->
-
-    <div class="row">
-      <div class="col">
-        <!-- .main_visual -->
-        <div class="main_visual">
-          <div class="text">
-            <h1>M-Box</h1>
-            <p>Michiフォリオサイトへようこそ！！</p>
-            <a href="about/about.html" class="btn-01">more</a>
-          </div>
-        </div>
-        <!-- // .main_visual -->
+  <!-- header -->
+  <header class="l-header">
+    <div class="l-header__menu">
+      <button class="l-header__menu__button" id="navButton" aria-expanded="false" aria-controls="navGlobal" aria-label="メニューを開く">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <div class="l-header__menu__text" id="navText" aria-expanded="false">
+        <span class="open">メニュー</span>
+        <span class="close">とじる</span>
       </div>
     </div>
-
-    <!-- main -->
-    <main class="main">
-      <div class="row">
-        <!-- .portfolio -->
-        <div class="portfolio">
-          <h2 class="heading_type_A">Portfolio</h2>
-          <div class="col col-lg-td anime">
-            <h3>ラーメンことこと屋</h3>
-            <img src="images/site1.jpg" alt="サイト1" />
-            <a href="portfolio/portfolio.html#portfolio_01" target="_blank" class="btn-02">more</a>
+    <div class="l-header__global">
+      <nav class="l-header__nav" id="globalNav" aria-hidden="true" aria-label="メニューの中身">
+        <ul class="l-header__nav__list">
+          <li class="l-header__nav__list-item"><a href="/">トップ</a></li>
+          <li class="l-header__nav__list-item"><a href="/about/">私について</a></li>
+          <li class="l-header__nav__list-item"><a href="/works/">制作実績</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- // header -->
+  <!-- main -->
+  <main class="top" id="page-top">
+    <section class="top-kv">
+      <div class="top-kv__container">
+        <div class="top-kv__inner">
+          <div class="top-kv__split">
+            <div class="top-kv__title" data-bg-type="dark">
+              <div class="top-kv__headline">
+                <h1><span class="top-kv__headline-text">M-Box</span></h1>
+              </div>
+              <p class="top-kv__title-text">Michi's Portfolio</p>
+            </div>
+            <div class="top-kv__image"><img src="images/top/top-kv.jpg" alt=""></div>
           </div>
-          <div class="col col-lg-td anime">
-            <h3>J.League Express</h3>
-            <img src="images/site2.jpg" alt="サイト2" />
-            <a href="portfolio/portfolio.html#portfolio_02" target="_blank" class="btn-02">more</a>
-          </div>
-          <div class="col col-lg-td anime">
-            <h3>J.League Express Mobile</h3>
-            <img src="images/site3.png" alt="サイト3" />
-            <a href="portfolio/portfolio.html#portfolio_03" target="_blank" class="btn-02">more</a>
-          </div>
-        </div>
-        <!-- // portfolio -->
-      </div>
-
-      <div class="row">
-        <!-- .works -->
-        <div class="works">
-          <h2 class="heading_type_A">Works</h2>
-          <div class="col col-lg-td anime">
-            <h3>juristicact</h3>
-            <img src="images/works_01.jpg" alt="juristicact">
-            <p>コーディング担当</p>
-            <p>製作期間：3ヶ月</p>
-            <a href="https://juristicact.com/" target="_blank" class="btn-02">Go to website</a>
-          </div>
-          <div class="col col-lg-td anime">
-            <h3>キャリア教育共済協同組合</h3>
-            <img src="images/works_02.jpg" alt="キャリア教育共済協同組合">
-            <p>コーディング担当</p>
-            <p>製作期間：1ヶ月</p>
-            <a href="https://macce.or.jp/" target="_blank" class="btn-02">Go to website</a>
-          </div>
-          <div class="col col-lg-td anime">
-            <h3>国際先進医療統合学会（WAAIM）</h3>
-            <img src="images/works_03.jpg" alt="一般社団法人 国際先進医療統合学会（WAAIM）">
-            <p>コーディング担当</p>
-            <p>製作期間：4ヶ月</p>
-            <a href="http://waaim.or.jp/" target="_blank" class="btn-02">Go to website</a>
+          <div class="top-kv__scroll-indicator">
+            <span>スクロール</span>
+            <div class="top-kv__scroll-indicator__mouse"></div>
           </div>
         </div>
-        <!-- // .works -->
       </div>
-    </main>
-    <!-- // main -->
-
-    <!-- トップへ戻るボタン -->
-    <a href="#top" class="top_btn" id="top_btn">TOP</a>
-    <!-- // トップへ戻るボタン -->
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="row">
-        <div class="col">
-          <p class="footer_text">Copyright &copy; 2017 M-Box All Rights Reserved.</p>
+    </section>
+    <section class="top-about">
+      <div class="l-inner-medium">
+        <div class="l-wrapper">
+          <div class="top-about__headline">
+            <h2 class="c-headline-typeA">自己紹介</h2>
+          </div>
+          <div class="top-about__inner">
+            <div class="top-about__contents js-fade-up" style="--delay: 0.8s;">
+              <div class="top-about__contents__description">
+                <p class="paragraph">ポートフォリオサイトを訪問していただきありがとうございます。</p>
+                <p class="paragraph">このサイトはMichiが自身の制作実績やスキルを紹介するためのサイトです。<br>制作実績にはこれまで制作したWebサイトの実績を載せています。</p>
+              </div>
+              <div class="top-about__contents__image">
+                <img src="images/top/top-about_01.png" width="400" height="300" alt="">
+              </div>
+            </div>
+            <div class="top-about__button">
+              <a href="/about/" class="c-button-typeA">私について</a>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- // footer -->
+    </section>
+    <section class="top-works">
+      <div class="l-inner-medium">
+        <div class="l-wrapper">
+          <div class="top-works__headline">
+            <h2 class="c-headline-typeA">制作実績</h2>
+          </div>
+          <div class="top-works__list">
+            <div class="c-works-card">
+              <div class="c-works-card__item js-clip-in" style="--delay: 0.3s;" data-category="category-color-green">
+                <figure>
+                  <div class="thumbnail">
+                    <div><img src="images/top/top-works_01.png" width="1400" height="800" alt="北山田デンタルクリニック"></div>
+                    <span class="thumbnail__border-left"></span>
+                    <span class="thumbnail__border-right"></span>
+                  </div>
+                  <figcaption>
+                    <div class="category">歯医者</div>
+                    <p class="site-name"><a href="https://www.kitayamata-dental.com" target="_blank">北山田デンタルクリニック</a></p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="c-works-card__item js-clip-in" style="--delay: 0.8s;" data-category="category-color-green">
+                <figure>
+                  <div class="thumbnail">
+                    <div><img src="images/top/top-works_02.png" width="1400" height="800" alt="いしわた眼科"></div>
+                    <span class="thumbnail__border-left"></span>
+                    <span class="thumbnail__border-right"></span>
+                  </div>
+                  <figcaption>
+                    <div class="category">眼科</div>
+                    <p class="site-name"><a href="https://www.haijima-ganka.com" target="_blank">いしわた眼科</a></p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="c-works-card__item js-clip-in" style="--delay: 1.2s;" data-category="category-color-magenta">
+                <figure>
+                  <div class="thumbnail">
+                    <div><img src="images/top/top-works_03.png" width="1400" height="800" alt="juristicact"></div>
+                    <span class="thumbnail__border-left"></span>
+                    <span class="thumbnail__border-right"></span>
+                  </div>
+                  <figcaption>
+                    <div class="category">音楽</div>
+                    <p class="site-name"><a href="https://www.juristicact.com" target="_blank">juristicact</a></p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="top-works__button"><a href="/works/" class="c-button-typeA">制作実績</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- // main -->
+  <!-- footer -->
+  <footer class="l-footer">
+    <div class="l-inner-small">
+      <div class="l-wrapper">
+        <div class="l-footer__content">
+          <div class="l-footer__logo">
+            <h1><a href="">M-Box</a></h1>
+          </div>
+          <ul class="l-footer__nav">
+            <li class="l-footer__nav__item"><a href="/">トップ</a></li>
+            <li class="l-footer__nav__item"><a href="/about/">私について</a></li>
+            <li class="l-footer__nav__item"><a href="/works/">制作実績</a></li>
+          </ul>
+        </div>
+        <p class="l-footer__copyright">© 2025 M-Box.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- // footer -->
+  <div class="c-top-button" id="topButton">
+    <a href="#page-top">
+      <span class="c-top-button__text"><span class="material-symbols-outlined">arrow_upward</span></span>
+    </a>
   </div>
-  <!-- // wrapper -->
-
-  <!-- script -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="common/js/script.js"></script>
-  <!-- // script -->
 </body>
 
 </html>

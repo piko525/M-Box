@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*===========================================
+キービジュアル(top-kv)
+===========================================*/
+.top-kv__container { container-type: inline-size; }
+.top-kv__inner { position: relative; }
+.top-kv__split { display: block grid; grid-template-columns: 1fr; min-height: 100svh; }
+.top-kv__title { height: 50svh; padding: 20cqi 10cqi; background-color: var(--main-color); }
+.top-kv__title-text { color: var(--white); font-size: 2rem; }
+.top-kv__image { height: 50svh; }
+.top-kv__image img { width: 100%; height: 100%; object-fit: cover; }
+.top-kv__headline-text { color: var(--white); font-size: clamp(2.25rem, calc(0.737rem + 6.456vw), 8rem); /* min: 36px, max: 128px */; }
+.top-kv__scroll-indicator { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center; color: var(--white); font-size: 1rem; }
+.top-kv__scroll-indicator__mouse { width: 24px; height: 40px; border: 2px solid var(--white); border-radius: 12px; margin: 10px auto 0; position: relative; }
+.top-kv__scroll-indicator__mouse::after { content: ""; position: absolute; top: 6px; left: 50%; width: 4px; height: 6px; background: var(--white); border-radius: 2px; transform: translateX(-50%); animation: wheel 1.5s infinite; }
+@container (min-width: 62em) {
+  .top-kv__split { grid-template-columns: 50% 50%; }
+  .top-kv__title { height: 100svh; }
+  .top-kv__image { height: 100svh; }
+}
+@container (min-width: 75em) {
+  .top-kv__title { padding: 17cqi 10cqi; }
+}
+@keyframes wheel {
+  0% { opacity: 1; top: 6px; }
+  50% { opacity: 0; top: 20px; }
+  100% { opacity: 1; top: 6px; }
+}
+
+/*===========================================
+私について(top-about)
+===========================================*/
+.top-about { background-color: var(--bg-main-color); }
+.top-about__headline { margin-bottom: var(--space50); }
+.top-about__contents { display: block grid; grid-template-columns: 1fr; gap: clamp(1.875rem, calc(0.993rem + 2.451vw), 3.75rem);; margin-bottom: var(--space80); }
+.top-about__contents__description .paragraph { font-size: 1.25rem; line-height: 1.8; }
+.top-about__button { display: block grid; place-items: center; }
+@container (min-width: 36em) {
+  .top-about__contents { grid-template-columns: repeat(2, 1fr); }
+}
+
+/*===========================================
+制作実績（top-works）
+===========================================*/
+.top-works__headline { margin-bottom: var(--space50); }
+.top-works__list { margin-bottom: var(--space80); }
+.top-works__button { display: block grid; place-items: center; }
