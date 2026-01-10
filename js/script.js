@@ -8,7 +8,7 @@ function navOpenClose() {
   navButton.addEventListener("click", () => {
     const expanded = navButton.getAttribute("aria-expanded") === "true";
     navButton.setAttribute("aria-expanded", !expanded);
-    globalNav.setAttribute("aria-hidden", expanded);
+    globalNav.setAttribute("aria-expanded", !expanded);
     navText.setAttribute("aria-expanded", !expanded);
     navButton.setAttribute("aria-label", expanded ? "メニュー" : "とじる");
 
