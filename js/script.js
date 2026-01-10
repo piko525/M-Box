@@ -10,7 +10,7 @@ function navOpenClose() {
     navButton.setAttribute("aria-expanded", !expanded);
     globalNav.setAttribute("aria-hidden", expanded);
     navText.setAttribute("aria-expanded", !expanded);
-    navButton.setAttribute("aria-label", expanded ? "メニューを開く" : "メニューを閉じる");
+    navButton.setAttribute("aria-label", expanded ? "メニュー" : "とじる");
 
     // メニューが開いたときに背景色クラスを更新
     if (!expanded) {
