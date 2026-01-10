@@ -132,10 +132,10 @@ body { font-family: "Kiwi Maru", serif; }
 .l-header__menu__button[aria-expanded="true"] .line:nth-child(3) { top: 23px; left: 50%; transform: translateX(-50%) rotate(-45deg); }
 .l-header__menu__text { font-size: 0.8rem; font-weight: 700; text-align: center; }
 .l-header__menu__text :is(.open, .close) { display: block; color: var(--white); }
-.l-header__menu__text[aria-expanded="false"] .open { display: block; }
-.l-header__menu__text[aria-expanded="true"] .close { display: block; }
-.l-header__menu__text[aria-expanded="true"] .open { display: none; }
-.l-header__menu__text[aria-expanded="false"] .close { display: none; }
+.l-header__menu__text .open { display: block; }
+.l-header__menu__text.is-active .close { display: block; }
+.l-header__menu__text.is-active .open { display: none; }
+.l-header__menu__text .close { display: none; }
 /* 薄い背景の上にある場合 */
 body.has-light-bg .l-header__menu__text :is(.open, .close) { color: var(--black); }
 /* 濃い背景の上にある場合（明示的に指定） */

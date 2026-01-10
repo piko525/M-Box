@@ -9,7 +9,7 @@ function navOpenClose() {
     const expanded = navButton.getAttribute("aria-expanded") === "true";
     navButton.setAttribute("aria-expanded", !expanded);
     globalNav.setAttribute("aria-expanded", !expanded);
-    navText.setAttribute("aria-expanded", !expanded);
+    navText.classList.toggle("is-active");
     navButton.setAttribute("aria-label", expanded ? "メニュー" : "とじる");
 
     // メニューが開いたときに背景色クラスを更新
