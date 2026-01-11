@@ -63,6 +63,8 @@
   --category-color-purple: #9370DB;
 }
 
+:where(:root, body) { overflow-x: hidden; overflow-x: clip; }
+
 /*===========================================
 ボディ(body)
 ===========================================*/
