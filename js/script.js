@@ -184,3 +184,12 @@ window.addEventListener('scroll', () => {
 
 // 初期化
 updateHeaderBgClass();
+
+// ミストアニメーション
+function blurInAnimation() {
+    window.addEventListener('load', () => {
+    document.querySelector('.js-blur-in')?.classList.add('is-active');
+  });
+}
+
+blurInAnimation();

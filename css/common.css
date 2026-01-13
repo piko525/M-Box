@@ -251,6 +251,18 @@ body.has-dark-bg .l-header__menu__text :is(.open, .close) { color: var(--white);
     transform: translateY(0);
   }
 }
+.js-blur-in { filter: blur(12px); opacity: 0.4; }
+.js-blur-in.is-active { animation-name: blur-in; animation-duration: 1.4s; animation-timing-function: ease-out; animation-fill-mode: forwards; animation-delay: var(--delay, 0s); }
+@keyframes blur-in {
+  from {
+    filter: blur(12px);
+    opacity: 0.4;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 
 /*===========================================
 ページトップへ戻るボタン(top-button)
