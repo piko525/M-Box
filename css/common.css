@@ -74,10 +74,10 @@ body { font-family: "Kiwi Maru", serif; }
 レイアウト(layout)
 ===========================================*/
 .l-wrapper { max-width: 1800px; margin-inline: auto; }
-.l-inner-ex-small { container-type: inline-size; padding: 1cqi 3cqi; }
-.l-inner-small { container-type: inline-size; padding: 3cqi 3cqi; }
-.l-inner-medium { container-type: inline-size; padding: 9cqi 3cqi; }
-.l-inner-large { container-type: inline-size; padding: 12cqi 3cqi; }
+.l-inner-ex-small { container-type: inline-size; padding: 20px 5cqi; }
+.l-inner-small { container-type: inline-size; padding: 40px 5cqi; }
+.l-inner-medium { container-type: inline-size; padding: 80px 5cqi; }
+.l-inner-large { container-type: inline-size; padding: 100px 5cqi; }
 
 /*===========================================
 下層ページのキービジュアル(subpage-kv)
