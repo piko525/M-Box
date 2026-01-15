@@ -50,4 +50,6 @@
 ===========================================*/
 .top-works__headline { margin-bottom: var(--space50); }
 .top-works__list { margin-bottom: var(--space80); }
+.top-works__list__lead { margin-bottom: var(--space50); }
+.top-works__list__lead .paragraph { font-size: 1.25rem; line-height: 1.8; }
 .top-works__button { display: block grid; place-items: center; }
