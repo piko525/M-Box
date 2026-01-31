@@ -3,18 +3,20 @@
 /*===========================================
 ご挨拶(about-greeting)
 ===========================================*/
-.about-greeting__headline { margin-bottom: var(--space50); }
-.about-greeting__content__history:not(:last-of-type) { margin-bottom: var(--space80); }
-.about-greeting__content__history .title { margin-bottom: var(--space30); }
+.about-greeting__headline { margin-bottom: var(--space75); }
+.about-greeting__content__history:not(:last-of-type) { margin-bottom: var(--space160); }
+.about-greeting__content__history .title { margin-bottom: var(--space50); }
 .about-greeting__content__history .parag { font-size: 1.2rem; line-height: 2; }
 
 /*===========================================
 プロフィール(about-profile)
 ===========================================*/
 .about-profile { background-color: var(--bg-sub-color); }
-.about-profile__headline { margin-bottom: var(--space50); }
-.about-profile__list { max-width: 800px;}
-.about-profile__list__item { display: grid; grid-template-columns: 150px 1fr; }
-.about-profile__list__item :is(.title, .data) { padding: 1em; }
+.about-profile__headline { margin-bottom: var(--space75); }
+.about-profile__list__item { display: grid; grid-template-columns: 120px 1fr; }
+.about-profile__list__item :is(.title, .data) { padding: 3em 1em; }
 .about-profile__list__item .title { border-bottom: 2px solid var(--accent-color); }
 .about-profile__list__item .data { border-bottom: 2px solid var(--black); }
+@container (min-width: 48em) {
+  .about-profile__list__item { grid-template-columns: 15% 1fr; }
+}

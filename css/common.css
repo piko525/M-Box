@@ -74,10 +74,16 @@ body { font-family: "Kiwi Maru", serif; }
 レイアウト(layout)
 ===========================================*/
 .l-wrapper { max-width: 1800px; margin-inline: auto; }
-.l-inner-ex-small { container-type: inline-size; padding: 20px 5cqi; }
-.l-inner-small { container-type: inline-size; padding: 40px 5cqi; }
-.l-inner-medium { container-type: inline-size; padding: 80px 5cqi; }
-.l-inner-large { container-type: inline-size; padding: 100px 5cqi; }
+.l-inner-ex-small { container-type: inline-size; padding: 40px 5cqi; }
+.l-inner-small { container-type: inline-size; padding: 80px 5cqi; }
+.l-inner-medium { container-type: inline-size; padding: 160px 5cqi; }
+.l-inner-large { container-type: inline-size; padding: 240px 5cqi; }
+@media (min-width: 62em) {
+  .l-inner-ex-small { padding: 80px 5cqi; }
+  .l-inner-small { padding: 160px 5cqi; }
+  .l-inner-medium { padding: 240px 5cqi; }
+  .l-inner-large { padding: 320px 5cqi; }
+}
 
 /*===========================================
 下層ページのキービジュアル(subpage-kv)
@@ -85,7 +91,6 @@ body { font-family: "Kiwi Maru", serif; }
 .c-subpage-kv { container-type: inline-size;}
 .c-subpage-kv__icon { position: relative; overflow: hidden; }
 .c-subpage-kv__title { padding: var(--space180) var(--space50); background-color: var(--main-color); }
-.c-subpage-kv__title-text { color: var(--white); font-size: clamp(2rem, calc(1.737rem + 1.123vw), 3rem); /* min: 32px, max: 48px */; }
 @container (min-width: 48em) {
   .c-subpage-kv__icon::after { content: ""; position: absolute; top: 0; right: 0; width: 50%; height: 100%; }
   .c-subpage-kv__icon.--about::after { background: url("../images/subpage-kv-about.svg") no-repeat center center; background-size: contain; }
@@ -100,7 +105,7 @@ body { font-family: "Kiwi Maru", serif; }
 .c-breadcrumbs__list__item:not(:last-of-type) { padding-right: 40px; }
 .c-breadcrumbs__list__item::before { content: ""; position: absolute; top: 50%; right: 0; display: block; width: 10px; height: 10px; border-top: 2px solid var(--black); border-right: 2px solid var(--black); transform: translateY(-50%) rotate(45deg); }
 .c-breadcrumbs__list__item:nth-last-of-type(1)::before { display: none; }
-.c-breadcrumbs__list__item .text { font-size: 0.875rem; }
+.c-breadcrumbs__list__item .text { font-size: 1.3rem; }
 .c-breadcrumbs__list__item.is-current .text { color: var(--accent-color); }
 .c-breadcrumbs__list__item a { position: relative; display: inline-block; padding-bottom: 0.3em; }
 .c-breadcrumbs__list__item a::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background-color: var(--black); transition: width 0.3s ease-in-out; }
@@ -172,10 +177,11 @@ body.has-dark-bg .l-header__menu__text :is(.open, .close) { color: var(--white);
 /*===========================================
 見出し(headline)
 ===========================================*/
-.c-headline-typeA { position: relative; width: fit-content; padding-bottom: var(--space10); font-size: clamp(1.5rem, calc(1.382rem + 0.327vw), 1.75rem); /* min: 24px, max: 28px */; }
-.c-headline-typeA::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background-color: var(--accent-color); }
-.c-headline-typeB { position: relative; padding-left: 1em; font-size: clamp(1.125rem, calc(1.043rem + 0.351vw), 1.438rem); /* min: 18px, max: 23px */; }
-.c-headline-typeB::before { content: ""; position: absolute; top: 0; left: 0; width: 5px; height: 100%; background-color: var(--main-color); }
+.c-headline-typeA { color: var(--white); font-size: clamp(3rem, calc(2.605rem + 1.684vw), 4.5rem); /* min: 48px, max: 72px */; font-weight: 400; }
+.c-headline-typeB { position: relative; width: fit-content; padding-bottom: var(--space10); font-size: clamp(2rem, calc(1.868rem + 0.561vw), 2.5rem); /* min: 32px, max: 40px */; font-weight: 300; }
+.c-headline-typeB::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background-color: var(--accent-color); }
+.c-headline-typeC { position: relative; padding-left: 1em; font-size: clamp(1.5rem, calc(1.368rem + 0.561vw), 2rem); /* min: 24px, max: 32px */; font-weight: 300; }
+.c-headline-typeC::before { content: ""; position: absolute; top: 0; left: 0; width: 5px; height: 100%; background-color: var(--main-color); }
 
 /*===========================================
 制作実績一覧カード(works-card)

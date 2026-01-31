@@ -37,7 +37,7 @@
 私について(top-about)
 ===========================================*/
 .top-about { background-color: var(--bg-main-color); }
-.top-about__headline { margin-bottom: var(--space50); }
+.top-about__headline { margin-bottom: var(--space75); }
 .top-about__contents { display: block grid; grid-template-columns: 1fr; gap: clamp(1.875rem, calc(0.993rem + 2.451vw), 3.75rem); margin-bottom: var(--space80); }
 .top-about__contents__description .paragraph { font-size: 1.25rem; line-height: 1.8; }
 .top-about__button { display: block grid; place-items: center; }
@@ -48,7 +48,7 @@
 /*===========================================
 制作実績（top-works）
 ===========================================*/
-.top-works__headline { margin-bottom: var(--space50); }
+.top-works__headline { margin-bottom: var(--space75); }
 .top-works__list { margin-bottom: var(--space80); }
 .top-works__list__lead { margin-bottom: var(--space50); }
 .top-works__list__lead .paragraph { font-size: 1.25rem; line-height: 1.8; }

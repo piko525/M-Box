@@ -3,6 +3,6 @@
 /*===========================================
 実績一覧(works-list)
 ===========================================*/
-.works-list__headline { margin-bottom: var(--space50); }
+.works-list__headline { margin-bottom: var(--space75); }
 .works-list__contents { margin-bottom: var(--space80); }
 .works-list__button { display: block grid; place-items: center; }
